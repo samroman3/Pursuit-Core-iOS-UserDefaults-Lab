@@ -11,7 +11,11 @@ import UIKit
 class HoroscopeViewController: UIViewController {
     
     var currenthoroscope: Horoscope?
-
+    
+    var name = UserDefaultsWrapper.wrapper.getUserName()
+    
+    @IBOutlet weak var userName: UILabel!
+    
     @IBOutlet weak var singName: UILabel!
     
     @IBOutlet weak var horoscope: UITextView!
@@ -24,7 +28,7 @@ class HoroscopeViewController: UIViewController {
     override func viewDidLoad() {
         singName.text = currenthoroscope?.sunsign
         horoscope.text = currenthoroscope?.horoscope
-        
+        userName.text = name
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

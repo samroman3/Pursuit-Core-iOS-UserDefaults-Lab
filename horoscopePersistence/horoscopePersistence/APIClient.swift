@@ -15,9 +15,9 @@ struct HoroscopeAPIClient {
     
     
     
-    func getHoroscopes(completionHandler: @escaping (Result<Horoscope,AppError>) -> () ) {
+    func getHoroscopes(sign: String, completionHandler: @escaping (Result<Horoscope,AppError>) -> () ) {
         
-        guard let url = URL(string: "http://sandipbgt.com/theastrologer/api/horoscope/gemini/today") else {
+        guard let url = URL(string: "http://sandipbgt.com/theastrologer/api/horoscope/\(sign)/today") else {
             completionHandler(.failure(.badURL))
             return
         }

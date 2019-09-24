@@ -112,6 +112,7 @@
                     <connections>
                         <outlet property="horoscope" destination="4j5-D1-FOO" id="NbU-oG-O8p"/>
                         <outlet property="singName" destination="YwV-V6-Ahm" id="m4D-yM-qRI"/>
+                        <outlet property="userName" destination="ifI-7g-6Yy" id="Sd3-E8-WV4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1At-pN-Mo2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
